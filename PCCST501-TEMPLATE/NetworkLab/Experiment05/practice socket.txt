@@ -1,0 +1,73 @@
+OUTPUT OF SOCKET PROGRAMMING PRACTICE
+
+ 1st Program : Send Hello
+
+SERVER
+
+Socket Created Successfully...
+Bind Successful...
+Waiting for Client...
+Client Connected...
+Client Says : HELLO
+
+CLIENT
+
+Socket Created Successfully...
+Connected to Server...
+Enter Message : HELLO
+Message Sent...
+
+
+ 2nd Program :REVERSE A STRING
+
+CLIENT
+
+student@student-OptiPlex-3020:~/indhu$ gcc cclient.c
+student@student-OptiPlex-3020:~/indhu$ ./a.out
+Enter a string: HELLO
+Reversed string: OLLEH
+student@student-OptiPlex-3020:~/indhu$
+
+SERVER
+
+student@student-OptiPlex-3020:~/indhu$ gcc sserver.c
+student@student-OptiPlex-3020:~/indhu$ ./a.out
+Server listening on port 8080...
+Received string: HELLO
+Reversed string sent: OLLEH
+student@student-OptiPlex-3020:~/indhu$ 
+
+
+ 3rd Program : ARRAY SORTING
+
+SERVER
+
+student@student-OptiPlex-3020:~/indhu$ gcc server.c
+student@student-OptiPlex-3020:~/indhu$ ./a.out
+Socket Created Successfully...
+Bind Successful...
+Waiting for Client...
+Client Connected...
+Array Received:
+33 22 56 37 35 
+Sorted Array Sent...
+Connection Closed...
+student@student-OptiPlex-3020:~/indhu$ 
+
+CLIENT
+
+student@student-OptiPlex-3020:~/indhu$ gcc client.c
+student@student-OptiPlex-3020:~/indhu$ ./a.out
+Socket Created Successfully...
+Connected to Server...
+Enter number of elements: 5
+Enter 5 elements:
+33 22 56 37 35
+Array Sent to Server...
+Sorted Array:
+22 33 35 37 56 
+Connection Closed...
+student@student-OptiPlex-3020:~/indhu$ 
+
+
+
